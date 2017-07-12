@@ -1,0 +1,69 @@
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+ext {
+
+    //Android
+    androidBuildToolsVersion = "25.0.2"
+    androidMinSdkVersion = 19
+    androidTargetSdkVersion = 25
+    androidCompileSdkVersion = 25
+
+    //Libraries
+    appCompatVersion        = '25.3.1'
+    constraintLayoutVersion = '1.0.2'
+    glideVersion            = '3.7.0'
+    retrofit2Version        = '2.2.0'
+    retrofitConverterVer    = '2.0.2'
+    retrofitAdapterVersion  = '2.0.1'
+    rxAndroidVer            = '1.2.1'
+    rxJavaVer               = '1.1.6'
+    daggerVersion           = '2.7'
+    butterKnifeVersion      = '8.5.1'
+    okHttp3LoggingVer       = '3.4.1'
+    picassoVer              = '2.5.0'
+    stethoVer               = '1.4.1'
+
+    //Testing
+    jUnitVersion            = '4.12'
+    hamcrestVersion         = '1.3'
+    mockitoCoreVersion      = '2.6.3'
+    mockWebServerVersion    = '3.6.0'
+
+    devDependencies = [
+            constraintLay   :   "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}",
+            design          :   "com.android.support:design:${appCompatVersion}",
+            dagger          :   "com.google.dagger:dagger:${daggerVersion}",
+            daggerCompiler  :   "com.google.dagger:dagger-compiler:${daggerVersion}",
+            appCompat       :   "com.android.support:appcompat-v7:${appCompatVersion}",
+            design          :   "com.android.support:design:${appCompatVersion}",
+            cardView        :   "com.android.support:cardview-v7:${appCompatVersion}",
+            glide           :   "com.github.bumptech.glide:glide:${glideVersion}",
+            retrofit2       :   "com.squareup.retrofit2:retrofit:${retrofit2Version}",
+            retrofit2Conv   :   "com.squareup.retrofit2:converter-gson:${retrofitConverterVer}",
+            retrofit2adap   :   "com.squareup.retrofit2:adapter-rxjava:${retrofitAdapterVersion}",
+            rxAndroid       :   "io.reactivex:rxandroid:${rxAndroidVer}",
+            rxJava          :   "io.reactivex:rxjava:${rxJavaVer}",
+            butterKnife     :   "com.jakewharton:butterknife:${butterKnifeVersion}",
+            butterKnifeComp :   "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+            okhttp3logging  :   "com.squareup.okhttp3:logging-interceptor:${okHttp3LoggingVer}",
+            picasso         :   "com.squareup.picasso:picasso:${picassoVer}",
+            stetho          :   "com.facebook.stetho:stetho:${stethoVer}",
+            stethoOkHttp    :   "com.facebook.stetho:stetho-okhttp3:${stethoVer}"
+    ]
+
+    testDependencies = [
+
+            jUnit           :   "junit:junit:${jUnitVersion}",
+            hamcrest        :   "org.hamcrest:hamcrest-library:${hamcrestVersion}",
+            mockWebServer   :   "com.squareup.okhttp3:mockwebserver:${mockWebServerVersion}",
+            mockito         :   "org.mockito:mockito-android:${mockitoCoreVersion}",
+            mockitoCore     :   "org.mockito:mockito-core:${mockitoCoreVersion}",
+            daggerTest      :   "com.google.dagger:dagger:${daggerVersion}",
+            daggerTestComp  :   "com.google.dagger:dagger-compiler:${daggerVersion}"
+
+    ]
+}

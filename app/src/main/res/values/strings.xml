@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">SwitchMediaExercise</string>
+    <string name="app_name">Switch Media Exercise</string>
+    <string name="contentDescriptionContent">image with data</string>
+    <string name="defaultErrorMsg">Currently facing some issues, please try again later</string>
+    <string name="categoryListFragment">category</string>
+    <string name="itemDetailFragment">itemDetail</string>
+    <string name="itemData">itemData</string>
+    <string name="FEATURES">Features</string>
+
 </resources>
