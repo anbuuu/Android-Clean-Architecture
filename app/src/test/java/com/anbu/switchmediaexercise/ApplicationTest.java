@@ -2,10 +2,6 @@ package com.anbu.switchmediaexercise;
 
 import android.test.ApplicationTestCase;
 
-/**
- * Created by anbu.ezhilan on 9/07/2017.
- */
-
 @SuppressWarnings("deprecation")
 public class ApplicationTest extends ApplicationTestCase<AcmeApplication> {
 
